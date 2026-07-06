@@ -1,3 +1,3 @@
 // Re-export semua halaman untuk kemudahan import
-export { default as Home } from './Home'
-export { default as NotFound } from './NotFound'
+export { default as Home } from '@/pages/Home'
+export { default as NotFound } from '@/pages/NotFound'
