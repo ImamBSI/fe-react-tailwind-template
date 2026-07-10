@@ -27,4 +27,4 @@ Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) di komputer Anda (
 Bersihkan file template:
 Untuk menghapus semua file README.md bawaan dari template ini, jalankan perintah berikut:
 
-find . -name "README.md" -exec git rm -f {} \;
+find . -type f -name "README.md" -delete
