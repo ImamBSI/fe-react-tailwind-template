@@ -1,4 +1,5 @@
-React + Vite + Tailwind CSS Template
+# React + Vite + Tailwind CSS Template
+
 Template proyek siap pakai yang dikonfigurasi dengan React, Vite, dan Tailwind CSS untuk pengembangan aplikasi web yang cepat dan efisien.
 
 🚀 Fitur Utama
