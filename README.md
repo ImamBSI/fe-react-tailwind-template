@@ -1,75 +1,62 @@
-# React + TypeScript + Vite
+React + Vite + Tailwind CSS Template
+Template proyek siap pakai yang dikonfigurasi dengan React, Vite, dan Tailwind CSS untuk pengembangan aplikasi web yang cepat dan efisien.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Fitur Utama
+Vite: Pengalaman development yang sangat cepat dengan Hot Module Replacement (HMR).
 
-Currently, two official plugins are available:
+React: Menggunakan standar terbaru untuk membangun user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tailwind CSS: Utility-first CSS framework untuk desain yang responsif dan fleksibel.
 
-## React Compiler
+Siap Pakai: Konfigurasi dasar sudah diatur untuk membantu Anda memulai proyek dalam hitungan detik.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Tech Stack
+Frontend: React
 
-## Expanding the ESLint configuration
+Build Tool: Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Styling: Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Language: JavaScript / TypeScript
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📋 Prasyarat
+Pastikan Anda telah menginstal Node.js (versi 18.0.0 ke atas disarankan) di mesin Anda.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+⚙️ Cara Memulai
+Clone repository ini:
 
-```
+Bash
+git clone https://github.com/username/repo-anda.git
+cd repo-anda
+Bersihkan Template:
+Jika Anda ingin menghapus semua file README.md bawaan dari template ini sebelum memulai pengembangan Anda sendiri, jalankan perintah berikut:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Bash
+find . -name "README.md" -exec git rm -f {} \;
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Bash
+npm install
+# atau jika menggunakan yarn
+yarn install
+Jalankan server pengembangan:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Bash
+npm run dev
+# atau jika menggunakan yarn
+yarn dev
+📦 Build untuk Produksi
+Untuk melakukan build aplikasi ke dalam folder dist:
 
-```
+Bash
+npm run build
+🎨 Konfigurasi Tailwind
+Konfigurasi Tailwind CSS dapat disesuaikan melalui file tailwind.config.js di direktori root. Anda dapat menambahkan tema, font, atau plugin baru sesuai kebutuhan desain Anda.
+
+🤝 Kontribusi
+Silakan fork repositori ini dan kirimkan Pull Request jika Anda memiliki saran perbaikan atau ingin menambahkan fitur baru ke dalam template ini.
+
+Tips Pengembangan:
+Gunakan src/components untuk menaruh komponen-komponen UI Anda agar struktur folder tetap rapi.
+
+Anda bisa menambahkan .env file untuk mengelola environment variables (API URL, dll) sesuai kebutuhan proyek Anda.
